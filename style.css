@@ -979,7 +979,6 @@ footer {
     margin-bottom: 20px;
     color: var(--primary-color);
     padding: 50px !important;
-    padding-bottom: 70px;
     font-size: 34px;
 }
 
@@ -1057,6 +1056,16 @@ footer {
         scroll-margin-top: 80px;
         /* Adjust based on your navbar height */
     }
+    .project-heading {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    padding: 50px !important;
+    padding-bottom: 50px;
+    font-size: 34px;
+}
 }
 
 /* General Styles for the Form Section */
