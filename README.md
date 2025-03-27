@@ -20,4 +20,4 @@ This portfolio is hosted on GitHub Pages. To view it, visit: [Your Portfolio Lin
 ## How to Run Locally
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/your-username/your-portfolio.git
+   git clone https://github.com/Lohitha666/Portfolio
