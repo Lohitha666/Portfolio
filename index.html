@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Lohitha</title>
+    <link rel="icon" type="image/png" href="images/portfolio.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1>Portfolio</h1>
+        <button id="menu-btn" class="menu-btn">☰</button>
+        <ul id="nav-links">
+            <li><a href="#home"><img id="icon-home" src="images/home-light.png" alt=""> Home</a></li>
+            <li><a href="#about"><img id="icon-about" src="images/about-light.png" alt=""> About</a></li>
+            <li><a href="#education"><img id="icon-education" src="images/education-light.png" alt="">
+                    Education</a></li>
+            <li><a href="#skills"><img id="icon-skills" src="images/skills-light.png" alt=""> Skills</a></li>
+            <li><a href="#projects"><img id="icon-projects" src="images/projects-light.png" alt=""> Projects</a>
+            </li>
+            <li><a href="#experiences"><img id="icon-experiences" src="images/experiencess-light.png" alt="">
+                    Experiences</a>
+            </li>
+            <li><a href="#certifications"><img id="icon-certifications" src="images/certifications-light.png" alt="">
+                    Certifications</a></li>
+            <li><a href="#contact"><img id="icon-contact" src="images/contact-light.png" alt=""> Contact</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-image">
+            <img src="images/profile.jpg" alt="profile">
+        </div>
+        <div class="home-content">
+            <h1>Hello, I'm <span>Lohitha Suggala</span> 👋</h1>
+            <h2><span class="multiple-text"></span></h2>
+            <p>I am passionate about leveraging technology to create impactful solutions.
+                I specialize in Artificial Intelligence, Machine Learning, and Natural Language Processing to build
+                intelligent systems.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/suggala-lohitha" target="_blank"><img src="images/linkedin.png"
+                        alt="LinkedIn"></a>
+                <a href="https://github.com/Lohitha666" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+                <a href="" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            </div>
+            <a href="images/resume.pdf" class="show-certificate-btn" target="_blank">Download Resume</a>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Hello! I'm Lohitha Suggala, a Computer Science Engineer with a specialization in Artificial Intelligence
+                and Machine Learning. I am passionate about building innovative solutions that make a difference. I have
+                expertise in Natural Language Processing and have worked on various projects, including toxic comment
+                detection and mask adherence monitoring systems.</p>
+            <p>In addition to my technical skills, I possess strong problem-solving, teamwork, and leadership abilities.
+                I enjoy working on challenging problems and collaborating with like-minded individuals to create
+                impactful solutions. I aim to continually grow in the field of AI and contribute to cutting-edge
+                technologies that drive change.</p>
+            <p>When I'm not coding, I love participating in hackathons, learning new tech, and contributing to
+                open-source projects. I'm always excited to learn and develop skills that will help me solve real-world
+                problems.</p>
+        </div>
+        <div class="about-image">
+            <img src="images/about.jpeg" alt="profile">
+        </div>
+    </section>
+
+
+    <!-- education Section -->
+    <section id="education" class="education-section">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-box">
+                <p class="year">2021 - 2025</p>
+                <h3>B.Tech - CSE</h3>
+                <p class="college">Kalasalingam Academy of Research and Education</p>
+                <p class="desc">Specialisation : AI & ML</p>
+                <p class="gpa">CGPA: 8.7</p>
+            </div>
+            <div class="education-box">
+                <p class="year">2019 - 2021</p>
+                <h3>HSC</h3>
+                <p class="college">New Vision Junior College</p>
+                <p class="desc">Specialisation : MPC</p>
+                <p class="gpa">Percentage: 95.2%</p>
+            </div>
+            <div class="education-box">
+                <p class="year">2018 - 2019</p>
+                <h3>SSC</h3>
+                <p class="college">Winfield High School</p>
+                <p class="desc">Specialisation : General</p>
+                <p class="gpa">GPA: 9.7</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- skill Section -->
+    <section id="skills">
+        <h2 class="skill-heading">Skills</h2>
+        <div class="skills-container">
+            <div class="technical-skills">
+                <h3>Technical Skills</h3>
+                <div class="skill">
+                    <div class="skill-info">
+                        <img src="images/c.png" alt="">
+                        <p>C</p>
+                        <span class="percentage">Proficient</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <img src="images/python.png" alt="">
+                        <p>Python</p>
+                        <span class="percentage">Proficient</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <img src="images/java.png" alt="">
+                        <p>Java</p>
+                        <span class="percentage">Intermediate</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="60"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <img src="images/html.png" alt="">
+                        <p>HTML</p>
+                        <span class="percentage">Proficient</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <img src="images/css.png" alt="">
+                        <p>CSS</p>
+                        <span class="percentage">Basic</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="40"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <img src="images/database.png" alt="">
+                        <p>DBMS</p>
+                        <span class="percentage">Intermediate</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="60"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <img src="images/ai.png" alt="">
+                        <p>Artificial Intelligence</p>
+                        <span class="percentage">Intermediate</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="60"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <img src="images/machine-learning.png" alt="">
+                        <p>Machine Learning</p>
+                        <span class="percentage">Basic</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="40"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <img src="images/deep-learning.png" alt="">
+                        <p>Deep Learning</p>
+                        <span class="percentage">Basic</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="40"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <img src="images/natural-language-processing.png" alt="">
+                        <p>Natural Language Processing</p>
+                        <span class="percentage">Beginner</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="20"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <img src="images/mysql.png" alt="">
+                        <p>My SQL</p>
+                        <span class="percentage">Intermediate</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="60"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <img src="images/vs.png" alt="">
+                        <p>VS Code</p>
+                        <span class="percentage">Intermediate</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="soft-skills">
+                <h3>Soft Skills</h3>
+                <p>Problem-Solving <span class="mark">:</span><span class="stars"> ⭐⭐⭐⭐</span></p>
+                <p>Critical Thinking <span class="mark">:</span><span class="stars"> ⭐⭐⭐</span></p>
+                <p>Leadership <span class="mark">:</span><span class="stars"> ⭐⭐⭐⭐⭐</span></p>
+                <p>Team Management <span class="mark">:</span><span class="stars"> ⭐⭐⭐⭐</span></p>
+                <p>Communication <span class="mark">:</span><span class="stars"> ⭐⭐⭐⭐⭐</span></p>
+                <p>Public Speaking <span class="mark">:</span><span class="stars"> ⭐⭐⭐⭐⭐</span></p>
+                <p>Project Management <span class="mark">:</span><span class="stars"> ⭐⭐⭐</span></p>
+                <p>Time Management <span class="mark">:</span><span class="stars"> ⭐⭐⭐⭐</span></p>
+                <p>Adaptability <span class="mark">:</span><span class="stars"> ⭐⭐⭐⭐</span></p>
+                <p>Quick Learning <span class="mark">:</span><span class="stars"> ⭐⭐⭐⭐⭐</span></p>
+                <p>Attention to Detail<span class="mark">:</span><span class="stars"> ⭐⭐⭐⭐</span></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- project Section -->
+    <h2 id="projects" class="project-heading">Projects</h2>
+    <section class="timeline">
+        <div class="outer">
+            <div class="card left">
+                <div class="info">
+                    <h3 class="title">
+                        Automated Toxic and Spam Detection in YouTube Comments using BERT
+                        <a href="https://github.com/Lohitha666/Automated-Toxic-and-Spam-Detection-in-YouTube-Comments-using-BERT"
+                            class="link-icon" title="Open">
+                            <img src="images/link.png" alt="Link">
+                        </a>
+                    </h3>
+                    <p>Comment Crafter is a web application designed to enhance content moderation by detecting and
+                        filtering toxic and spam comments on YouTube. It leverages BERT-based NLP, Rapid Fuzzy Matching,
+                        and Levenshtein Distance to analyze and classify comments efficiently. The system integrates
+                        OAuth 2.0 for secure API access and ensures improved online discourse.
+                    </p>
+                </div>
+            </div>
+            <div class="card right">
+                <div class="info">
+                    <h3 class="title">
+                        Social Proximity and Mask Monitoring System
+                        <a href="https://github.com/Lohitha666/Social-Proximity-and-Mask-Monitoring-System"
+                            class="link-icon" title="Open">
+                            <img src="images/link.png" alt="Link">
+                        </a>
+                    </h3>
+                    <p>This AI-driven system ensures compliance with COVID-19 safety measures by monitoring mask
+                        adherence and social distancing in public spaces. Using CNN and YOLOv3, it detects individuals
+                        without masks and estimates crowd proximity in real-time, providing an automated solution for
+                        public safety monitoring.
+                    </p>
+                </div>
+            </div>
+            <div class="card left">
+                <div class="info">
+                    <h3 class="title">
+                        Fraud Detection in E-Commerce Transactions
+                        <a href="https://github.com/Lohitha666/Fraud-Detection-in-E-Commerce-Transactions"
+                            class="link-icon" title="Open">
+                            <img src="images/link.png" alt="Link">
+                        </a>
+                    </h3>
+                    <p>A machine learning-based fraud detection system that identifies suspicious credit card
+                        transactions, helping prevent financial fraud. Utilizing Logistic Regression and Decision Trees,
+                        it analyzes transaction patterns and flags potential fraud, enhancing security in online
+                        payments.
+                    </p>
+                </div>
+            </div>
+            <div class="card right">
+                <div class="info">
+                    <h3 class="title">
+                        Airline Reservation and Travel Planner
+                        <a href="https://github.com/Lohitha666/Airline-Reservation-and-Travel-Planner" class="link-icon"
+                            title="Open">
+                            <img src="images/link.png" alt="Link">
+                        </a>
+                    </h3>
+                    <p>A web-based flight booking system designed for a seamless travel experience. It integrates safety
+                        guides, budget-friendly travel recommendations, and real-time flight information, ensuring users
+                        find the best travel options with ease.
+                    </p>
+                </div>
+            </div>
+            <div class="card left">
+                <div class="info">
+                    <h3 class="title">
+                        Virtual Mouse
+                        <a href="https://github.com/Lohitha666/Virtual-Mouse" class="link-icon" title="Open">
+                            <img src="images/link.png" alt="Link">
+                        </a>
+                    </h3>
+                    <p>A gesture-based virtual mouse that eliminates the need for physical input devices. Using computer
+                        vision and hand-tracking algorithms, it enables users to control cursor movements, clicks, and
+                        gestures through real-time hand recognition, providing a contactless and accessible computing
+                        experience.
+                    </p>
+                </div>
+            </div>
+            <div class="card right">
+                <div class="info">
+                    <h3 class="title">
+                        Health Insurance Cross-Sell Prediction
+                        <a href="https://github.com/Lohitha666/Health-Insurance-Cross-Sell-Prediction" class="link-icon"
+                            title="Open">
+                            <img src="images/link.png" alt="Link">
+                        </a>
+                    </h3>
+                    <p>A machine learning model that predicts whether existing insurance customers are likely to
+                        purchase additional health insurance. Using classification algorithms, it analyzes customer
+                        demographics, previous policy details, and behavioral data to enhance targeted marketing
+                        strategies and improve conversion rates.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- certification Section -->
+
+    <h2 id="experiences" class="project-heading">Career & Contributions</h2>
+    <section id="certifications" class="section">
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <!-- Accordion Header as a button -->
+                <button class="accordion-header">
+                    <img src="images/internship.png" alt="" class="certification-logo"> Internships
+                </button>
+                <div class="accordion-content">
+                    <div class="certification-card">
+                        <h3>Data Science</h3>
+                        <img src="images/certificates/teachnook-poject.jpg" alt="image" class="certification-logo">
+                        <p>Organization: Teachnook</p>
+                        <p>Active During: Sep-Oct 2023</p>
+                        <a href="https://drive.google.com/file/d/1nMlAKKYqPJuJ1AoCralG_tycdzKoaG-q/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show
+                            Certificate</a>
+                    </div>
+
+                    <div class="certification-card">
+                        <h3>Artificial Intelligence</h3>
+                        <img src="images/certificates/ibm.jpg" alt="image" class="certification-logo">
+                        <p>Organization: IBM</p>
+                        <p>Active During: Jun-Jul 2023</p>
+                        <a href="https://drive.google.com/file/d/1R2fvxiJtMcRtnxpzeWwsshJiDoCexwgD/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show Certificate</a>
+                    </div>
+
+                    <div class="certification-card">
+                        <h3>Brand Executive</h3>
+                        <img src="images/certificates/teachnook appreciation.jpg" alt="image"
+                            class="certification-logo">
+                        <p>Organization: Teachnook</p>
+                        <p>Active During: May-Jun 2023</p>
+                        <a href="https://drive.google.com/file/d/1ONMJKYzTJbeCI0euUL71U9yhZVzp8bO4/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show
+                            Certificate</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <!-- Accordion Header as a button -->
+                <button class="accordion-header">
+                    <img src="images/publication.png" alt="" class="certification-logo"> Publications
+                </button>
+                <div class="accordion-content">
+                    <div class="certification-card">
+                        <h3> Metaverse Based Medical Disease Diagnosis: Cancer Detection</h3>
+                        <img src="images/certificates/Metaverse.jpeg" alt="image" class="certification-logo">
+                        <p>Published In: Applying Metaverse Technologies to Human-Computer Interaction for
+                            Healthcare</p>
+                        <p>Publication Date: March 2025</p>
+                        <a href="https://books.google.com.au/books?hl=en&lr=lang_en&id=gJlCEQAAQBAJ&oi=fnd&pg=PA179&dq=Sakthivel+Sankaran&ots=DpPfia8lPB&sig=8PYiB5bM7QTHwZKap2UWXvgm03g#v=onepage&q=Sakthivel%20Sankaran&f=false"
+                            class="show-certificate-btn" target="_blank">Show Publication</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3>Automated Toxic and Spam Detection in YouTube Comments Using BERT and
+                            Rapid Fuzzy Matching</h3>
+                        <img src="images/certificates/icaccd.jpg" alt="image" class="certification-logo">
+                        <p>Published In: Springer Nature</p>
+                        <p>Publication Date: October 2024</p>
+                        <a href="https://drive.google.com/file/d/18Q6S61nVjN5B1xYVAcv7hYDTHTi9_BuA/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show Publication</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 id="certifications" class="project-heading">Certifications</h2>
+        <!-- Accordion for SWAYAM Certifications -->
+        <div class="accordion">
+            <div class="accordion-item">
+                <!-- Accordion Header as a button -->
+                <button class="accordion-header">
+                    <img src="images/certificate.png" alt="" class="certification-logo"> Technical Certifications
+                </button>
+                <div class="accordion-content">
+                    <div class="certification-card">
+                        <h3>Data Science</h3>
+                        <img src="images/certificates/teachnook.jpg" alt="image" class="certification-logo">
+                        <p>Issued by: Teachnook</p>
+                        <p>Completion Date: October 2023</p>
+                        <a href="https://drive.google.com/file/d/12cfcOx6S03QUsRK0X0q_jg0-ajmqmn8W/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3>Python</h3>
+                        <img src="images/certificates/guvi-2.jpg" alt="image" class="certification-logo">
+                        <p>Issued by: GUVI</p>
+                        <p>Completion Date: August 2023</p>
+                        <a href="https://drive.google.com/file/d/1kXv2-BpccR-ZR-FnBJ1wtQQ-ABNl_3L-/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3>Machine Learning with Python</h3>
+                        <img src="images/certificates/freecodecamp.jpg" alt="image" class="certification-logo">
+                        <p>Issued by: Free Code Camp</p>
+                        <p>Completion Date: June 2023</p>
+                        <a href="https://drive.google.com/file/d/1zsUhm_dJBMbVYvx59D3SEnrWIlbmdZ-I/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show
+                            Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3>AI for Women</h3>
+                        <img src="images/certificates/guvi-1.jpg" alt="image" class="certification-logo">
+                        <p>Issued by: GUVI</p>
+                        <p>Completion Date: March 2023</p>
+                        <a href="https://drive.google.com/file/d/1F3aTcOyZ9jwlzXZ4cBdQvcyffyO8EI9i/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3>Python</h3>
+                        <img src="images/certificates/kaggle.jpg" alt="image" class="certification-logo">
+                        <p>Issued by: Kaggle</p>
+                        <p>Completion Date: October 2022</p>
+                        <a href="https://drive.google.com/file/d/1lx3PH6LIFb4TsbolJQsXbvWl5PC4D83-/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show Certificate</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <!-- Accordion Header as a button -->
+                <button class="accordion-header">
+                    <img src="images/nptel.png" alt="" class="certification-logo"> NPTEL Certifications
+                </button>
+                <div class="accordion-content">
+                    <div class="certification-card">
+                        <h3>Conservation Geography</h3>
+                        <img src="images/certificates/conservation-geography.jpg" alt="image"
+                            class="certification-logo">
+                        <p>Completion Date: October 2024</p>
+                        <a href="https://drive.google.com/file/d/1o-JZeJdFVLWkQcD8U4nztG8_unPEuCe9/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show
+                            Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3>One Health</h3>
+                        <img src="images/certificates/one-health.jpg" alt="image" class="certification-logo">
+                        <p>Completion Date: April 2024</p>
+                        <a href="https://drive.google.com/file/d/1dUM5UTGUJzU6hGNv3rtL3G9tTggUhzrJ/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show
+                            Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3> Forests and their Management</h3>
+                        <img src="images/certificates/forest-and-managements.jpg" alt="image"
+                            class="certification-logo">
+                        <p>Completion Date: April 2024</p>
+                        <a href="https://drive.google.com/file/d/1Z4IZxUEnmsRy3D18vl9omwZHLkdjfVsP/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show
+                            Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3> Wildlife Ecology</h3>
+                        <img src="images/certificates/wildlife.jpg" alt="image" class="certification-logo">
+                        <p>Completion Date: October 2023</p>
+                        <a href="https://drive.google.com/file/d/1j2xbtLPZsAnrxUX3EvBMnNbj927COLQM/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3>Work System Design</h3>
+                        <img src="images/certificates/worksystemdesign.jpg" alt="image" class="certification-logo">
+                        <p>Completion Date: October 2023</p>
+                        <a href="https://drive.google.com/file/d/1iZ18DcTijL0r-WxT_0OKxdWpWb9FUO4c/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show
+                            Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3>Soft Skills</h3>
+                        <img src="images/certificates/softskills.jpg" alt="image" class="certification-logo">
+                        <p>Completion Date: October 2022</p>
+                        <a href="https://drive.google.com/file/d/1ulyeZum4PyCNJ-WNcMw8vyFVW_uqvnWu/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show
+                            Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3>Developing Soft Skills and Personality</h3>
+                        <img src="images/certificates/developing-softskills.jpg" alt="image" class="certification-logo">
+                        <p>Completion Date: September 2022</p>
+                        <a href="https://drive.google.com/file/d/1beRB9ZnbgrL9-t84rfCq6YcXuUPRaAas/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show
+                            Certificate</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <!-- Accordion Header as a button -->
+                <button class="accordion-header">
+                    <img src="images/workshop.png" alt="" class="certification-logo"> Workshop Certifications
+                </button>
+                <div class="accordion-content">
+                    <div class="certification-card">
+                        <h3>Enhancing Happiness Quotient</h3>
+                        <img src="images/certificates/iksc-1.jpg" alt="image" class="certification-logo">
+                        <p>Issued by: IUCEE</p>
+                        <p>Completion Date: January 2024</p>
+                        <a href="https://drive.google.com/file/d/1fK46zEIIELZQFohhHbmSiJLg13BmRKYi/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3>Smart Money Moves</h3>
+                        <img src="images/certificates/iksc-2.jpg" alt="image" class="certification-logo">
+                        <p>Issued by: IUCEE</p>
+                        <p>Completion Date: January 2024</p>
+                        <a href="https://drive.google.com/file/d/1E_yw_VcHTwgZGKRy4yMMzJ6RTbVpHqiY/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3>Masterin Technical Writing and Documentation</h3>
+                        <img src="images/certificates/iksc-3.jpg" alt="image" class="certification-logo">
+                        <p>Issued by: IUCEE</p>
+                        <p>Completion Date: January 2024</p>
+                        <a href="https://drive.google.com/file/d/13Z_OgZMsRyoMCkw7tvVVncPf7chtpZH1/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3>Engineering Design Methodologies</h3>
+                        <img src="images/certificates/iksc-4.jpg" alt="image" class="certification-logo">
+                        <p>Issued by: IUCEE</p>
+                        <p>Completion Date: January 2024</p>
+                        <a href="https://drive.google.com/file/d/10gd9d_O7MJ7289i673pa8sy3EmBU0L7J/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show Certificate</a>
+                    </div>
+                    <div class="certification-card">
+                        <h3>Social and Emotional Learning Skills</h3>
+                        <img src="images/certificates/iksc-5.jpg" alt="image" class="certification-logo">
+                        <p>Issued by: IUCEE</p>
+                        <p>Completion Date: January 2024</p>
+                        <a href="https://drive.google.com/file/d/1RpjtiQy7iXNrReDhi5PydZfmwK8P_TVb/view?usp=sharing"
+                            class="show-certificate-btn" target="_blank">Show Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" onsubmit="clearForm()">
+            <div class="form-group">
+                <input type="hidden" name="access_key" value="7ce09159-5e67-40ea-8c16-75c91d4e9945">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <div class="footer-contact">
+            <div class="contact-item">
+                <img src="images/mail.png" alt="Email">
+                <a href="mailto:lohithasuggala@gmail.com">lohithasuggala@gmail.com</a>
+            </div>
+            <span class="separator">|</span>
+            <div class="contact-item">
+                <img src="images/whatsapp.png" alt="Phone">
+                <a href="tel:+918125845144">+91 8125845144</a>
+            </div>
+            <span class="separator">|</span>
+            <div class="contact-item">
+                <img src="images/location.png" alt="Location">
+                <a href="https://maps.app.goo.gl/8vDZmk1SSSnYXXsv7" target="_blank">Wyra, Khammam, Telangana.</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script> <!-- Link to External JS -->
+</body>
+
+</html>
