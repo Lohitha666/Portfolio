@@ -978,8 +978,18 @@ footer {
     font-weight: bold;
     margin-bottom: 20px;
     color: var(--primary-color);
+    padding: 50px !important;
+    padding-bottom: 70px;
+    font-size: 34px;
+}
+
+.career-heading {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary-color);
     padding-top: 50px;
-    padding-bottom: 40px;
     font-size: 34px;
 }
 
@@ -998,10 +1008,6 @@ footer {
     transform: translateY(0);
 }
 
-#projects {
-    scroll-margin-top: 80px;
-    /* Adjust based on your navbar height */
-}
 
 .title a {
     color: inherit;
@@ -1054,19 +1060,20 @@ footer {
     }
 
     #projects {
-        scroll-margin-top: 80px;
+        scroll-margin-top: 60px;
         /* Adjust based on your navbar height */
     }
-    .project-heading {
-    text-align: center;
-    font-size: 34px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: var(--primary-color);
-    padding: 50px !important;
-    padding-bottom: 50px;
-    font-size: 34px;
-}
+    .career-heading {
+        text-align: center;
+        font-size: 34px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: var(--primary-color);
+       
+        padding-top: 50px;
+        padding-bottom: 50px ;
+        font-size: 34px;
+    }
 }
 
 /* General Styles for the Form Section */
@@ -1379,7 +1386,7 @@ a.show-certificate-btn {
     .accordion-content {
         grid-template-columns: 1fr !important;
         padding: 5px;
-     
+
     }
 
     .certification-card {
@@ -1389,25 +1396,25 @@ a.show-certificate-btn {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         text-align: center;
     }
-    
+
     .certification-card img {
         max-width: 300px;
         height: auto;
         margin-bottom: 10px;
     }
-    
+
     .certification-card h3 {
         font-size: 1.3em;
         color: var(--education-college);
     }
-    
+
     .certification-card p {
         font-size: 1em;
         color: var(--education-desc);
         margin: 5px 0;
     }
-    
 
-    
+
+
 
 }
