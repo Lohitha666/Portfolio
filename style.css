@@ -978,7 +978,8 @@ footer {
     font-weight: bold;
     margin-bottom: 20px;
     color: var(--primary-color);
-    padding: 50px !important;
+    padding-top: 50px;
+    padding-bottom-40px;
     font-size: 34px;
 }
 
