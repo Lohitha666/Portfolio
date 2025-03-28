@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 navLinks.classList.remove("active");
             });
         });
+        document.addEventListener("click", function (event) {
+            if (!menuBtn.contains(event.target) && !navLinks.contains(event.target)) {
+                navLinks.classList.remove("active");
+            }
+        });
     }
     setupScrollAnimation(".card");
     setupScrollAnimation(".education-box");
@@ -28,8 +33,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e)
 function detectSystemTheme() {
     const body = document.body;
     const themeToggleBtn = document.querySelector(".theme-toggle");
-    const savedTheme = localStorage.getItem("theme");
-    const isDark = savedTheme === "dark" || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    localStorage.removeItem("theme");
     if (isDark) {
         body.setAttribute('data-theme', 'dark');
         themeToggleBtn.textContent = "☀️ ‎ ‎ ‎ ‎ ‎ ";
@@ -117,7 +122,7 @@ function setupProgressBarAnimation() {
     function animateProgressBar(bar) {
         let value = bar.getAttribute("data-progress");
         let currentWidth = 0;
-        let speed = 15;
+        let speed = 20;
         bar.style.width = "0%"; // Reset before animation 
         let interval = setInterval(() => {
             if (currentWidth >= value) {
@@ -134,7 +139,7 @@ function setupProgressBarAnimation() {
                 animateProgressBar(entry.target);
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 1 });
     progressBars.forEach(bar => observer.observe(bar));
 }
 // Star Rating Animation (Triggers When in View)
@@ -148,12 +153,12 @@ function setupStarRatingAnimation() {
             let span = document.createElement("span");
             span.textContent = "⭐";
             span.style.opacity = "0";
-            span.style.transition = `opacity 0.5s ease-in-out ${i * 200}ms`;
+            span.style.transition = `opacity 0.5s ease-in-out ${i * 200+100}ms`;
             stars.appendChild(span);
             setTimeout(() => {
                 span.style.opacity = "1"
                 span.style.visibility = "visible";
-            }, i * 200);
+            }, i * 200+100);
         }
     }
     let observer = new IntersectionObserver(entries => {
@@ -163,7 +168,7 @@ function setupStarRatingAnimation() {
                 animateStars(entry.target);
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0 });
     starElements.forEach(stars => observer.observe(stars));
 }
 function clearForm() {
