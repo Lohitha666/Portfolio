@@ -7,10 +7,20 @@ document.addEventListener("DOMContentLoaded", function () {
             navLinks.classList.toggle("active");
         });
         document.querySelectorAll("#nav-links a").forEach(link => {
-            link.addEventListener("click", function () {
-                navLinks.classList.remove("active");
+            link.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent instant jump
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50, // Adjust offset if needed
+                        behavior: "smooth"
+                    });
+                }
+                navLinks.classList.remove("active"); // Close menu after click
             });
         });
+        
         document.addEventListener("click", function (event) {
             if (!menuBtn.contains(event.target) && !navLinks.contains(event.target)) {
                 navLinks.classList.remove("active");
@@ -74,11 +84,19 @@ function forceDownload() {
     const link = document.createElement("a");
     link.href = "images/resume.pdf";
     link.setAttribute("download", "Lohitha_Resume.pdf");
-    link.style.display = "none";
+    link.target = "_blank"; // Opens in a new tab if needed
     document.body.appendChild(link);
-    link.click();
+
+    // Ensure the download works across devices
+    if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/i)) {
+        window.open(link.href, "_blank");
+    } else {
+        link.click();
+    }
+
     document.body.removeChild(link);
 }
+
 // Initialize Text Typing Animation
 function setupTypedText() {
     new Typed('.multiple-text', {
