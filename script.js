@@ -83,12 +83,12 @@ function setIconsBasedOnTheme(isDark) {
 function downloadFile(event) {
     event.preventDefault();
     
-    fetch("images/resume.pdf")
+    fetch("images/LOHITHA_RESUME.pdf")
         .then(response => response.blob())
         .then(blob => {
             const link = document.createElement("a");
             link.href = URL.createObjectURL(blob);
-            link.download = "resume.pdf";  // Forces download
+            link.download = "LOHITHA_RESUME.pdf";  // Forces download
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
