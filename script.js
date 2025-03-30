@@ -81,13 +81,19 @@ function setIconsBasedOnTheme(isDark) {
 }
 // Resume Download Function
 function downloadFile(event) {
-    event.preventDefault(); // Prevent default opening
-    const link = document.createElement("a");
-    link.href = "images/resume.pdf";
-    link.download = "resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    event.preventDefault();
+    
+    fetch("images/resume.pdf")
+        .then(response => response.blob())
+        .then(blob => {
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "resume.pdf";  // Forces download
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        })
+        .catch(error => console.error("Download failed:", error));
 }
 
 // Initialize Text Typing Animation
