@@ -80,23 +80,13 @@ function setIconsBasedOnTheme(isDark) {
     });
 }
 // Resume Download Function
-function forceDownload() {
-    const fileUrl = "images/resume.pdf";
-    const fileName = "Lohitha_Resume.pdf";
-
+function downloadFile(event) {
+    event.preventDefault(); // Prevent default opening
     const link = document.createElement("a");
-    link.href = fileUrl;
-    link.setAttribute("download", fileName);
-    link.style.display = "none";
+    link.href = "images/resume.pdf";
+    link.download = "resume.pdf";
     document.body.appendChild(link);
-
-    try {
-        link.click(); // Works on most browsers
-    } catch (error) {
-        console.error("Download failed, opening in new tab instead.");
-        window.open(fileUrl, "_blank"); // Fallback for iOS & restricted browsers
-    }
-
+    link.click();
     document.body.removeChild(link);
 }
 
